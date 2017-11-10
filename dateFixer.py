@@ -51,6 +51,8 @@ def main(args):
                 os.system('SetFile -m "{}" {}'.format(d.strftime('%m/%d/%Y %H:%M:%S'), fotodir + '/' + filename))
                 # set the file "modification time"
                 os.system('SetFile -d "{}" {}'.format(d.strftime('%m/%d/%Y %H:%M:%S'), fotodir + '/' + filename))
+        else:
+            print 'Nothing to do.'
 
         print '---------------------------------------------------------------------'
 
