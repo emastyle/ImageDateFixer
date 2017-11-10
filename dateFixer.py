@@ -59,7 +59,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = ArgumentParser(description=__doc__)
-    parser.add_argument('--dry-run', help='Noop, do not write anything', action='store_true')
+    parser.add_argument('--dry-run', help='Noop, no change on files will be done', action='store_true')
     parser.add_argument('folder', help='Path to folder to scan for images')
     args = parser.parse_args()
     main(args)
